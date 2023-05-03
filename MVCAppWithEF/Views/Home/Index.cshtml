@@ -1,0 +1,10 @@
+﻿@using DBProject.Models;
+@model List<DBProject.Models.Customer>
+
+<div class="text-center">
+    <h2 class="display-4">Current Customers</h2>
+   @foreach(var c in Model)
+   {
+        <div> @c.FirstName </div>
+   }
+</div>
